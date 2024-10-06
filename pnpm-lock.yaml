@@ -11,6 +11,9 @@ importers:
       '@babel/runtime':
         specifier: ^7.24.4
         version: 7.25.7
+      '@nutui/icons-react-taro':
+        specifier: ^1.0.5
+        version: 1.0.5
       '@nutui/nutui-react-taro':
         specifier: ^2.6.21
         version: 2.6.21(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
