@@ -1,7 +1,6 @@
 import {View, Text} from '@tarojs/components'
 import {useLoad} from '@tarojs/taro'
 import {AtButton, AtIcon} from "taro-ui";
-import '@nutui/nutui-react-taro/dist/style.css'
 
 import {Button} from "@nutui/nutui-react-taro";
 
@@ -24,7 +23,7 @@ export default function Index() {
       <Button openType='openSetting' style={marginStyle}>
         打开授权设置页
       </Button>
-      <Button>goods</Button>
+      <Button openType='share'>goods</Button>
     </View>
   )
 }
