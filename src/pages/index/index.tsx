@@ -1,8 +1,8 @@
-import {View} from '@tarojs/components'
+import {Text, View} from '@tarojs/components'
 import {useLoad} from '@tarojs/taro'
-import {Cart, Category, Find, Home, User} from '@nutui/icons-react-taro'
+import {Cart, Category, Eye, Find, Home, User} from '@nutui/icons-react-taro'
 
-import {Card, Image, Tabbar} from "@nutui/nutui-react-taro";
+import {Image, Space, Tabbar} from "@nutui/nutui-react-taro";
 
 import {AtDrawer} from "taro-ui";
 import './index.scss'
@@ -18,16 +18,57 @@ function TongGaoDetail(props: {
     title: string
   }
 }) {
-  return <View style={{backgroundColor: "white", borderRadius: 10, padding: 10}}>
-    <Card
-      src={props.state.src}
-      title={props.state.title}
-      price={props.state.price}
-      vipPrice={props.state.vipPrice}
-      shopDescription={props.state.shopDescription}
-      delivery={props.state.delivery}
-      shopName={props.state.shopName}
-    />
+  const image = 'https://g-search3.alicdn.com/img/bao/uploaded/i4/i3/550020974/O1CN01tjFiel1J48gl5bGG8_!!550020974.jpg_580x580q90.jpg_.webp';
+
+  return <View style={{backgroundColor: "white", borderRadius: 10, padding: 10, margin: "20px 0"}}>
+    <Space direction='vertical'>
+      <View>
+        <Text style={{fontSize: 20}}>气质连衣裙小红书博主合作</Text>
+      </View>
+      <View style={{display: 'flex', alignItems: 'baseline', fontSize: 13, padding: '10px auto'}}>
+        <View style={{display: 'flex', flexDirection: 'column', padding: '2px 20px 2px 0'}}>
+          <Text style={{fontSize: 12, color: 'gray'}}>粉丝数</Text>
+          <Text>{">1000"}</Text>
+        </View>
+
+        <View style={{display: 'flex', flexDirection: 'column', padding: '2px 20px 2px 0'}}>
+          <Text style={{fontSize: 12, color: 'gray'}}>预算</Text>
+          <Text style={{color: 'rgb(139,122,211)', borderRadius: 5, fontWeight: 'bold'}}>￥30-￥50</Text>
+        </View>
+
+        <View style={{display: 'flex', flexDirection: 'column', padding: '2px 20px 2px 0'}}>
+          <Text style={{fontSize: 12, color: 'gray'}}>合作方式</Text>
+          <Text>寄拍</Text>
+        </View>
+
+        <View style={{display: 'flex', flexDirection: 'column', padding: '2px 20px 2px 0'}}>
+          <Text style={{fontSize: 12, color: 'gray'}}>达人数</Text>
+          <Text>88</Text>
+        </View>
+
+        <View style={{display: 'flex', flexDirection: 'column', padding: '2px 20px 2px 0'}}>
+          <Text style={{fontSize: 12, color: 'gray'}}>爆文率</Text>
+          <Text>66%</Text>
+        </View>
+      </View>
+      <View style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
+        <Image src={image} height={100} width={100} />
+        <Image src={image} height={100} width={100} />
+        <Image src={image} height={100} width={100} />
+      </View>
+      <View style={{display: 'flex', color: 'gray', alignItems: 'flex-end', borderRadius: 10}}>
+        <View style={{fontSize: 13, padding: 5, display: 'flex', alignItems: 'flex-end'}}>
+          <View style={{margin: '0 5px'}}><Category size={13} /></View>
+          <Text>还差</Text>
+          <Text style={{margin: '0 5px'}}>3</Text>
+          <Text>截止</Text>
+        </View>
+        <View style={{fontSize: 13, padding: 5, display: 'flex'}}>
+          <View style={{margin: '0 5px'}}><Eye size={15} /></View>
+          <Text>332</Text>
+        </View>
+      </View>
+    </Space>
   </View>;
 }
 
@@ -58,6 +99,7 @@ export default function Index() {
           return <TongGaoDetail key={k} state={state} />
         })
       }
+      <View style={{height: '10vh'}}></View>
       <Tabbar fixed>
         <Tabbar.Item title='首页' icon={<Home size={18} />} />
         <Tabbar.Item title='分类' icon={<Category size={18} />} />
