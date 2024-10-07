@@ -20,7 +20,7 @@ function TongGaoDetail(props: {
 }) {
   const image = 'https://g-search3.alicdn.com/img/bao/uploaded/i4/i3/550020974/O1CN01tjFiel1J48gl5bGG8_!!550020974.jpg_580x580q90.jpg_.webp';
 
-  return <View style={{backgroundColor: "white", borderRadius: 10, padding: '20px 10px', margin: "20px 0"}}>
+  return <View style={{backgroundColor: "white", borderRadius: 10, padding: '20px 10px', margin: "10px 0"}}>
     <Space direction='vertical'>
       <View>
         <Text style={{fontSize: 20}}>气质连衣裙小红书博主合作</Text>
@@ -56,7 +56,7 @@ function TongGaoDetail(props: {
         <Image src={image} height={100} width={100} />
         <Image src={image} height={100} width={100} />
       </View>
-      <View style={{fontSize: 15, display: 'flex', color: 'gray', marginTop: 10, padding: '5px 0', backgroundColor: 'rgb(250,250,250)', alignItems: 'flex-end', borderRadius: 5}}>
+      <View style={{fontSize: 14, display: 'flex', color: 'gray', marginTop: 10, padding: '3px 0', backgroundColor: 'rgb(250,250,250)', alignItems: 'flex-end', borderRadius: 5}}>
         <View style={{padding: 5, display: 'flex', alignItems: 'center'}}>
           <View style={{margin: '0 5px', height: 15}}><Category height='100%' /></View>
           <Text>还差</Text>
@@ -91,7 +91,7 @@ export default function Index() {
 
   return (
     <View className='index' style={{height: "100%", padding: 10, backgroundColor: "rgb(246,246,246)"}}>
-      <View style={{padding: '0 0 10px'}}>
+      <View style={{padding: '5px 0'}}>
         <Image style={{borderRadius: 10}} src={src} height={200} />
       </View>
       {
