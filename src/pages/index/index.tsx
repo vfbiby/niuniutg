@@ -1,8 +1,8 @@
-import {View, Text} from '@tarojs/components'
+import {View} from '@tarojs/components'
 import {useLoad} from '@tarojs/taro'
 import {Cart, Category, Find, Home, User} from '@nutui/icons-react-taro'
 
-import {Button, Card, Divider, Image, Tabbar} from "@nutui/nutui-react-taro";
+import {Card, Image, Tabbar} from "@nutui/nutui-react-taro";
 
 import {AtDrawer} from "taro-ui";
 import './index.scss'
@@ -35,7 +35,6 @@ export default function Index() {
   useLoad(() => {
     console.log('Page loaded.')
   })
-  const marginStyle = {margin: 8}
   const src =
     'https://storage.360buyimg.com/imgtools/e067cd5b69-07c864c0-dd02-11ed-8b2c-d7f58b17086a.png'
   const state = {
