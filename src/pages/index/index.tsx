@@ -8,7 +8,7 @@ import {AtDrawer} from "taro-ui";
 import './index.scss'
 
 function TongGaoDetail(props: {
-  state: {
+  state?: {
     delivery: string;
     src: string;
     price: string;
@@ -78,16 +78,6 @@ export default function Index() {
   })
   const src =
     'https://storage.360buyimg.com/imgtools/e067cd5b69-07c864c0-dd02-11ed-8b2c-d7f58b17086a.png'
-  const state = {
-    src: '//img10.360buyimg.com/n2/s240x240_jfs/t1/210890/22/4728/163829/6163a590Eb7c6f4b5/6390526d49791cb9.jpg!q70.jpg',
-    title:
-      '【活蟹】湖塘煙雨 阳澄湖大闸蟹公4.5两 母3.5两 4对8只 鲜活生鲜螃蟹现货水产礼盒海鲜水',
-    price: '388',
-    vipPrice: '378',
-    shopDescription: '自营',
-    delivery: '厂商配送',
-    shopName: '阳澄湖大闸蟹自营店>',
-  }
 
   return (
     <View className='index' style={{height: "100%", padding: 10, backgroundColor: "rgb(246,246,246)"}}>
@@ -96,7 +86,7 @@ export default function Index() {
       </View>
       {
         Array.from([1, 2, 3, 4]).map((_, k) => {
-          return <TongGaoDetail key={k} state={state} />
+          return <TongGaoDetail key={k} />
         })
       }
       <View style={{height: '10vh'}}></View>
