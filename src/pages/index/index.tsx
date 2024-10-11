@@ -1,5 +1,5 @@
 import {Text, View} from '@tarojs/components'
-import {useLoad} from '@tarojs/taro'
+import Taro, {useLoad} from '@tarojs/taro'
 import {Cart, Category, Eye, Find, Home, User} from '@nutui/icons-react-taro'
 
 import {Image, Space, Tabbar} from "@nutui/nutui-react-taro";
@@ -61,7 +61,7 @@ function TongGaoDetail(props: {
           <View style={{margin: '0 5px', height: 15}}><Category height='100%' /></View>
           <Text>还差</Text>
           <Text style={{margin: '0 5px'}}>3</Text>
-          <Text>截止</Text>
+          <Text>人截止</Text>
         </View>
         <View style={{padding: 5, display: 'flex', alignItems: 'center'}}>
           <View style={{margin: '0 5px', height: 15}}><Eye height='100%' /></View>
@@ -90,9 +90,13 @@ export default function Index() {
         })
       }
       <View style={{height: '10vh'}}></View>
-      <Tabbar fixed>
+      <Tabbar fixed onSwitch={async (value) => {
+        console.log(value)
+        await Taro.navigateTo({url: '/pages/tonggao/index'})
+      }}
+      >
         <Tabbar.Item title='首页' icon={<Home size={18} />} />
-        <Tabbar.Item title='分类' icon={<Category size={18} />} />
+        <Tabbar.Item title='分类' value={5} icon={<Category />} />
         <Tabbar.Item title='发现' icon={<Find size={18} />} />
         <Tabbar.Item title='购物车' icon={<Cart size={18} />} />
         <Tabbar.Item title='我的' icon={<User size={18} />} />
