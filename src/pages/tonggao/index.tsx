@@ -1,6 +1,6 @@
 import {View, Text} from "@tarojs/components";
 import {useLoad} from "@tarojs/taro";
-import {Grid} from "@nutui/nutui-react-taro";
+import {Grid, Image, Space} from "@nutui/nutui-react-taro";
 
 const Tonggao = () => {
   useLoad(() => {
@@ -8,7 +8,7 @@ const Tonggao = () => {
   })
 
   return (
-    <View style={{padding: 10, height: '100vh', backgroundColor: 'rgb(246,246,246)'}}>
+    <View style={{padding: 10, backgroundColor: 'rgb(246,246,246)'}}>
       <View style={{borderRadius: 10, backgroundColor: 'white', padding: 10, margin: '15px 0'}}>
         <View style={{
           fontSize: 22,
@@ -124,9 +124,59 @@ const Tonggao = () => {
             <Text>49</Text>
           </Grid.Item>
         </Grid>
+      </View>
+      <View style={{borderRadius: 10, backgroundColor: 'white', padding: 10, margin: '15px 0'}}>
+        <View style={{
+          fontSize: 22,
+          margin: "10px 0px",
+          borderLeft: '5px blue solid',
+          paddingLeft: 10,
+          backgroundColor: 'rgb(250,250,250)'
+        }}
+        >
+          <Text>爆文笔记</Text>
+        </View>
+        <View>
+          <Space direction='horizontal'>
+            <View style={{padding: 5}}>
+              <Image
+                src='https://sns-webpic-qc.xhscdn.com/202410131909/ae0b3979bafb0b7874c8662a014254f6/1040g00830v3ogv9nlg5049hhjrirnov2p0q8930!nd_dft_wlteh_webp_3'
+                height={100} width={100}
+                style={{borderRadius: 10}}
+              />
+            </View>
+            <View>
+              <View style={{padding: '2px 0'}}><Text style={{fontSize: 17}}>已经开始期待春天🌷🌻🌵💐🌈☀</Text>️</View>
+              <View>
+                <Space>
+                  <View style={{display: 'flex', flexDirection: 'column', padding: '2px 5px'}}>
+                    <Text style={{fontSize: 13, color: 'gray'}}>曝光数</Text>
+                    <Text>93,232</Text>
+                  </View>
+
+                  <View style={{display: 'flex', flexDirection: 'column', padding: '2px 5px'}}>
+                    <Text style={{fontSize: 13, color: 'gray'}}>阅读数</Text>
+                    <Text>9212</Text>
+                  </View>
+
+                  <View style={{display: 'flex', flexDirection: 'column', padding: '2px 5px'}}>
+                    <Text style={{fontSize: 13, color: 'gray'}}>点赞数</Text>
+                    <Text>90</Text>
+                  </View>
+
+                  <View style={{display: 'flex', flexDirection: 'column', padding: '2px 5px'}}>
+                    <Text style={{fontSize: 13, color: 'gray'}}>收藏数</Text>
+                    <Text>33</Text>
+                  </View>
+                </Space>
+              </View>
+            </View>
+          </Space>
+        </View>
+      </View>
+      <View style={{marginTop: 300, height: 20, backgroundColor: 'pink'}}></View>
     </View>
-</View>
-)
+  )
 }
 
 export default Tonggao
