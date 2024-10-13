@@ -1,5 +1,6 @@
 import {View, Text} from "@tarojs/components";
 import {useLoad} from "@tarojs/taro";
+import {Grid} from "@nutui/nutui-react-taro";
 
 const Tonggao = () => {
   useLoad(() => {
@@ -56,7 +57,7 @@ const Tonggao = () => {
           backgroundColor: 'rgb(250,250,250)'
         }}
         >
-          <Text>结算方式</Text>
+          <Text>计费方式</Text>
         </View>
         <View>
           <View style={{fontSize: 20, padding: "10px 0 2px"}}><Text>
@@ -84,8 +85,48 @@ const Tonggao = () => {
           <Text>收益：(20000-1000)/1000*30 = ￥570</Text>
         </View>
       </View>
+      <View style={{borderRadius: 10, backgroundColor: 'white', padding: 10, margin: '15px 0'}}>
+        <View style={{
+          fontSize: 22,
+          margin: "10px 0px",
+          borderLeft: '5px blue solid',
+          paddingLeft: 10,
+          backgroundColor: 'rgb(250,250,250)'
+        }}
+        >
+          <Text>发文数据</Text>
+        </View>
+        <Grid gap={3}>
+          <Grid.Item text='推广博主数'>
+            <Text>233</Text>
+          </Grid.Item>
+          <Grid.Item text='爆文率'>
+            <Text>50%</Text>
+          </Grid.Item>
+          <Grid.Item text='爆文数'>
+            <Text>9</Text>
+          </Grid.Item>
+          <Grid.Item text='发文数'>
+            <Text>120</Text>
+          </Grid.Item>
+          <Grid.Item text='申请数'>
+            <Text>350</Text>
+          </Grid.Item>
+          <Grid.Item text='通过率'>
+            <Text>80%</Text>
+          </Grid.Item>
+          <Grid.Item text='审核时间'>
+            <View>
+              <Text>30</Text><Text style={{fontSize: 11, color: 'gray', marginLeft: 3}}>分钟</Text>
+            </View>
+          </Grid.Item>
+          <Grid.Item text='百赞笔记'>
+            <Text>49</Text>
+          </Grid.Item>
+        </Grid>
     </View>
-  )
+</View>
+)
 }
 
 export default Tonggao
