@@ -155,7 +155,7 @@ const Tonggao = () => {
           </View>
           <View>
             <View style={{padding: '0px 0'}}><Text style={{fontSize: 17}}>已经开始期待春天🌷🌻🌵💐🌈☀</Text>️</View>
-            <View><Text style={{fontSize: 20, color: 'red'}}>¥780</Text></View>
+            <View><Text style={{color: 'gray'}}>收益：</Text><Text style={{fontSize: 15, color: 'red'}}>¥</Text><Text style={{fontSize: 20, color: 'red'}}>780</Text></View>
             <View style={{display: 'flex', flexDirection: 'row', gap: 10}}>
               <View style={{
                 fontSize: 11,
