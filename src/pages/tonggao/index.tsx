@@ -97,10 +97,9 @@ const Tonggao = () => {
       <View style={{borderRadius: 10, backgroundColor: 'white', padding: 10, margin: '15px 0'}}>
         <View style={{
           fontSize: 22,
-          margin: "10px 0px 2px",
-          borderLeft: '5px blue solid',
+          margin: "15px 0px",
+          borderLeft: '3px rgb(107,143,225) solid',
           paddingLeft: 10,
-          backgroundColor: 'rgb(250,250,250)'
         }}
         >
           <Text>气质连衣裙需要50人种草</Text>
@@ -136,10 +135,10 @@ const Tonggao = () => {
       <View style={{borderRadius: 10, backgroundColor: 'white', padding: 10, margin: '15px 0'}}>
         <View style={{
           fontSize: 22,
-          margin: "10px 0px 2px",
-          borderLeft: '5px blue solid',
+          // margin: "10px 0px 2px",
+          margin: "15px 0px",
+          borderLeft: '3px rgb(107,143,225) solid',
           paddingLeft: 10,
-          backgroundColor: 'rgb(250,250,250)'
         }}
         >
           <Text>计费方式</Text>
@@ -173,10 +172,9 @@ const Tonggao = () => {
       <View style={{borderRadius: 10, backgroundColor: 'white', padding: 10, margin: '15px 0'}}>
         <View style={{
           fontSize: 22,
-          margin: "10px 0px",
-          borderLeft: '5px blue solid',
+          margin: "15px 0px",
+          borderLeft: '3px rgb(107,143,225) solid',
           paddingLeft: 10,
-          backgroundColor: 'rgb(250,250,250)'
         }}
         >
           <Text>发文数据</Text>
@@ -213,10 +211,9 @@ const Tonggao = () => {
       <View style={{borderRadius: 10, backgroundColor: 'white', padding: 10, margin: '15px 0'}}>
         <View style={{
           fontSize: 22,
-          margin: "10px 0px",
-          borderLeft: '5px blue solid',
+          margin: "15px 0px",
+          borderLeft: '3px rgb(107,143,225) solid',
           paddingLeft: 10,
-          backgroundColor: 'rgb(250,250,250)'
         }}
         >
           <Text>爆文笔记</Text>
@@ -225,6 +222,44 @@ const Tonggao = () => {
         <NoteWithData />
         <NoteWithData />
         <NoteWithData />
+      </View>
+      <View style={{borderRadius: 10, backgroundColor: 'white', padding: 10, margin: '15px 0'}}>
+        <View style={{
+          fontSize: 22,
+          margin: "15px 0px",
+          borderLeft: '3px rgb(107,143,225) solid',
+          paddingLeft: 10,
+        }}
+        >
+          <Text>销量</Text>
+        </View>
+        <View style={{
+          height: "100vh",
+          width: "100%",
+          borderRadius: 10,
+          background: 'url(IMG_2236.PNG) no-repeat',
+          backgroundSize: 'cover'
+        }}
+        ></View>
+      </View>
+      <View style={{borderRadius: 10, backgroundColor: 'white', padding: 10, margin: '15px 0'}}>
+        <View style={{
+          fontSize: 22,
+          margin: "15px 0px",
+          borderLeft: '3px rgb(107,143,225) solid',
+          paddingLeft: 10,
+        }}
+        >
+          <Text>销量</Text>
+        </View>
+        <View style={{
+          height: "100vh",
+          width: "100%",
+          borderRadius: 10,
+          background: 'url(IMG_2236.PNG) no-repeat',
+          backgroundSize: 'cover'
+        }}
+        ></View>
       </View>
       <View style={{marginTop: 100, height: 20}}></View>
     </View>
