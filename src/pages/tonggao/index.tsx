@@ -240,9 +240,9 @@ const Tonggao = () => {
           background: 'url(IMG_2236.PNG) no-repeat',
           backgroundSize: 'cover'
         }}
-        ></View>
+        />
       </View>
-      <View style={{borderRadius: 10, backgroundColor: 'white', padding: 10, margin: '15px 0'}}>
+      <View style={{borderRadius: 10, backgroundColor: 'white', padding: 10, margin: '15px 0', overflow: 'hidden'}}>
         <View style={{
           fontSize: 22,
           margin: "15px 0px",
@@ -250,18 +250,55 @@ const Tonggao = () => {
           paddingLeft: 10,
         }}
         >
-          <Text>销量</Text>
+          <Text>搭配推荐</Text>
         </View>
-        <View style={{
-          height: "100vh",
-          width: "100%",
-          borderRadius: 10,
-          background: 'url(IMG_2236.PNG) no-repeat',
-          backgroundSize: 'cover'
-        }}
-        ></View>
+        <View>
+          <View style={{
+            height: "100vw",
+            width: "100%",
+            borderRadius: 10,
+            background: 'url(IMG_2237.JPG) no-repeat',
+            backgroundSize: 'contain'
+          }}
+          />
+          <View style={{display: 'flex', alignItems: 'center' ,gap: 10, padding: '10px 0'}}>
+            <View>
+              <View style={{
+                width: 100,
+                height: 100,
+                borderRadius: 10,
+                background: 'url(https://img.alicdn.com/imgextra/i1/550020974/O1CN01PyIFs11J48geEg1oW_!!550020974.jpg_.webp) no-repeat',
+                backgroundSize: 'cover'
+              }}
+              />
+              <View style={{textAlign: 'center', color: 'gray'}}>毛衣</View>
+            </View>
+            <View>
+              <View style={{
+                width: 100,
+                height: 100,
+                borderRadius: 10,
+                background: 'url(https://img.alicdn.com/bao/uploaded/i4/550020974/O1CN01eJI3Ly1J48ghmXkvS_!!550020974.jpg_q95.jpg_.webp) no-repeat',
+                backgroundSize: 'cover'
+              }}
+              />
+              <View style={{textAlign: 'center', color: 'gray'}}>半身裙</View>
+            </View>
+            <View>
+              <View style={{
+                width: 100,
+                height: 100,
+                borderRadius: 10,
+                background: 'url(https://g-search1.alicdn.com/img/bao/uploaded/i4/i1/804394550/O1CN01m2lKaX1jTwwxvd4cH_!!804394550.jpg_580x580q90.jpg) no-repeat',
+                backgroundSize: 'cover'
+              }}
+              />
+              <View style={{textAlign: 'center', color: 'gray'}}>鞋子</View>
+            </View>
+          </View>
+        </View>
       </View>
-      <View style={{marginTop: 100, height: 20}}></View>
+      <View style={{marginTop: 100, height: 21}}></View>
     </View>
   )
 }
