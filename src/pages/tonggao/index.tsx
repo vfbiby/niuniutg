@@ -1,6 +1,6 @@
 import {View, Text} from "@tarojs/components";
 import {useLoad} from "@tarojs/taro";
-import {Grid, Image, Space} from "@nutui/nutui-react-taro";
+import {Grid, Space} from "@nutui/nutui-react-taro";
 
 const Tonggao = () => {
   useLoad(() => {
@@ -137,25 +137,56 @@ const Tonggao = () => {
           <Text>爆文笔记</Text>
         </View>
         <View style={{display: 'flex', flexDirection: 'row'}}>
-          <View style={{padding: 5}}>
-            <Image
-              src='https://sns-webpic-qc.xhscdn.com/202410131909/ae0b3979bafb0b7874c8662a014254f6/1040g00830v3ogv9nlg5049hhjrirnov2p0q8930!nd_dft_wlteh_webp_3'
-              height={100} width={100}
-              style={{borderRadius: 10}}
-            />
+          <View style={{
+            padding: 5,
+            height: 100,
+            width: 100,
+          }}
+          >
+            <View style={{
+              height: '100%',
+              width: '100%',
+              borderRadius: 10,
+              background: 'url(https://sns-webpic-qc.xhscdn.com/202410131909/ae0b3979bafb0b7874c8662a014254f6/1040g00830v3ogv9nlg5049hhjrirnov2p0q8930!nd_dft_wlteh_webp_3) no-repeat',
+              backgroundSize: 'cover'
+            }}
+            >
+            </View>
           </View>
           <View>
-            <View style={{padding: '2px 0'}}><Text style={{fontSize: 17}}>已经开始期待春天🌷🌻🌵💐🌈☀</Text>️</View>
+            <View style={{padding: '0px 0'}}><Text style={{fontSize: 17}}>已经开始期待春天🌷🌻🌵💐🌈☀</Text>️</View>
+            <View><Text style={{fontSize: 20, color: 'red'}}>¥780</Text></View>
             <View style={{display: 'flex', flexDirection: 'row', gap: 10}}>
-              <View style={{fontSize: 11, color: 'rgb(241,151,111)', border: '0.5px rgb(241,151,111) solid', padding: '0px 4px', borderRadius: 3}}>
+              <View style={{
+                fontSize: 11,
+                color: 'rgb(241,151,111)',
+                border: '0.5px rgb(241,151,111) solid',
+                padding: '0px 4px',
+                borderRadius: 3
+              }}
+              >
                 <Text>阅读率:</Text>
                 <Text>18%</Text>
               </View>
-              <View style={{fontSize: 11, color: 'rgb(241,151,111)', border: '0.5px rgb(241,151,111) solid', padding: '0px 4px', borderRadius: 3}}>
+              <View style={{
+                fontSize: 11,
+                color: 'rgb(241,151,111)',
+                border: '0.5px rgb(241,151,111) solid',
+                padding: '0px 4px',
+                borderRadius: 3
+              }}
+              >
                 <Text>点赞率:</Text>
                 <Text>4%</Text>
               </View>
-              <View style={{fontSize: 11, color: 'rgb(241,151,111)', border: '0.5px rgb(241,151,111) solid', padding: '0px 4px', borderRadius: 3}}>
+              <View style={{
+                fontSize: 11,
+                color: 'rgb(241,151,111)',
+                border: '0.5px rgb(241,151,111) solid',
+                padding: '0px 4px',
+                borderRadius: 3
+              }}
+              >
                 <Text>收藏率:</Text>
                 <Text>0.5%</Text>
               </View>
