@@ -2,6 +2,91 @@ import {View, Text} from "@tarojs/components";
 import {useLoad} from "@tarojs/taro";
 import {Grid, Space} from "@nutui/nutui-react-taro";
 
+function NoteWithData() {
+  return <View style={{display: "flex", flexDirection: "row", margin: '10px 0'}}>
+    <View style={{
+      padding: 5,
+      height: 100,
+      width: 100,
+    }}
+    >
+      <View style={{
+        height: "100%",
+        width: "100%",
+        borderRadius: 10,
+        background: "url(https://sns-webpic-qc.xhscdn.com/202410131909/ae0b3979bafb0b7874c8662a014254f6/1040g00830v3ogv9nlg5049hhjrirnov2p0q8930!nd_dft_wlteh_webp_3) no-repeat",
+        backgroundSize: "cover"
+      }}
+      >
+      </View>
+    </View>
+    <View>
+      <View style={{padding: "0px 0"}}><Text style={{fontSize: 17}}>已经开始期待春天🌷🌻🌵💐🌈☀</Text>️</View>
+      <View><Text style={{color: "gray"}}>收益：</Text><Text style={{fontSize: 15, color: "red"}}>¥</Text><Text
+        style={{fontSize: 20, color: "red"}}
+      >780</Text></View>
+      <View style={{display: "flex", flexDirection: "row", gap: 10}}>
+        <View style={{
+          fontSize: 11,
+          color: "rgb(241,151,111)",
+          border: "0.5px rgb(241,151,111) solid",
+          padding: "0px 4px",
+          borderRadius: 3
+        }}
+        >
+          <Text>阅读率:</Text>
+          <Text>18%</Text>
+        </View>
+        <View style={{
+          fontSize: 11,
+          color: "rgb(241,151,111)",
+          border: "0.5px rgb(241,151,111) solid",
+          padding: "0px 4px",
+          borderRadius: 3
+        }}
+        >
+          <Text>点赞率:</Text>
+          <Text>4%</Text>
+        </View>
+        <View style={{
+          fontSize: 11,
+          color: "rgb(241,151,111)",
+          border: "0.5px rgb(241,151,111) solid",
+          padding: "0px 4px",
+          borderRadius: 3
+        }}
+        >
+          <Text>收藏率:</Text>
+          <Text>0.5%</Text>
+        </View>
+      </View>
+      <View>
+        <Space>
+          <View style={{display: "flex", flexDirection: "column", padding: "2px 5px"}}>
+            <Text style={{fontSize: 13, color: "gray"}}>曝光数</Text>
+            <Text>93,232</Text>
+          </View>
+
+          <View style={{display: "flex", flexDirection: "column", padding: "2px 5px"}}>
+            <Text style={{fontSize: 13, color: "gray"}}>阅读数</Text>
+            <Text>9212</Text>
+          </View>
+
+          <View style={{display: "flex", flexDirection: "column", padding: "2px 5px"}}>
+            <Text style={{fontSize: 13, color: "gray"}}>点赞数</Text>
+            <Text>90</Text>
+          </View>
+
+          <View style={{display: "flex", flexDirection: "column", padding: "2px 5px"}}>
+            <Text style={{fontSize: 13, color: "gray"}}>收藏数</Text>
+            <Text>33</Text>
+          </View>
+        </Space>
+      </View>
+    </View>
+  </View>;
+}
+
 const Tonggao = () => {
   useLoad(() => {
     console.log('Tonggao loaded!')
@@ -136,86 +221,10 @@ const Tonggao = () => {
         >
           <Text>爆文笔记</Text>
         </View>
-        <View style={{display: 'flex', flexDirection: 'row'}}>
-          <View style={{
-            padding: 5,
-            height: 100,
-            width: 100,
-          }}
-          >
-            <View style={{
-              height: '100%',
-              width: '100%',
-              borderRadius: 10,
-              background: 'url(https://sns-webpic-qc.xhscdn.com/202410131909/ae0b3979bafb0b7874c8662a014254f6/1040g00830v3ogv9nlg5049hhjrirnov2p0q8930!nd_dft_wlteh_webp_3) no-repeat',
-              backgroundSize: 'cover'
-            }}
-            >
-            </View>
-          </View>
-          <View>
-            <View style={{padding: '0px 0'}}><Text style={{fontSize: 17}}>已经开始期待春天🌷🌻🌵💐🌈☀</Text>️</View>
-            <View><Text style={{color: 'gray'}}>收益：</Text><Text style={{fontSize: 15, color: 'red'}}>¥</Text><Text style={{fontSize: 20, color: 'red'}}>780</Text></View>
-            <View style={{display: 'flex', flexDirection: 'row', gap: 10}}>
-              <View style={{
-                fontSize: 11,
-                color: 'rgb(241,151,111)',
-                border: '0.5px rgb(241,151,111) solid',
-                padding: '0px 4px',
-                borderRadius: 3
-              }}
-              >
-                <Text>阅读率:</Text>
-                <Text>18%</Text>
-              </View>
-              <View style={{
-                fontSize: 11,
-                color: 'rgb(241,151,111)',
-                border: '0.5px rgb(241,151,111) solid',
-                padding: '0px 4px',
-                borderRadius: 3
-              }}
-              >
-                <Text>点赞率:</Text>
-                <Text>4%</Text>
-              </View>
-              <View style={{
-                fontSize: 11,
-                color: 'rgb(241,151,111)',
-                border: '0.5px rgb(241,151,111) solid',
-                padding: '0px 4px',
-                borderRadius: 3
-              }}
-              >
-                <Text>收藏率:</Text>
-                <Text>0.5%</Text>
-              </View>
-            </View>
-            <View>
-              <Space>
-                <View style={{display: 'flex', flexDirection: 'column', padding: '2px 5px'}}>
-                  <Text style={{fontSize: 13, color: 'gray'}}>曝光数</Text>
-                  <Text>93,232</Text>
-                </View>
-
-                <View style={{display: 'flex', flexDirection: 'column', padding: '2px 5px'}}>
-                  <Text style={{fontSize: 13, color: 'gray'}}>阅读数</Text>
-                  <Text>9212</Text>
-                </View>
-
-                <View style={{display: 'flex', flexDirection: 'column', padding: '2px 5px'}}>
-                  <Text style={{fontSize: 13, color: 'gray'}}>点赞数</Text>
-                  <Text>90</Text>
-                </View>
-
-                <View style={{display: 'flex', flexDirection: 'column', padding: '2px 5px'}}>
-                  <Text style={{fontSize: 13, color: 'gray'}}>收藏数</Text>
-                  <Text>33</Text>
-                </View>
-              </Space>
-            </View>
-          </View>
-        </View>
+        <NoteWithData />
+        <NoteWithData />
+        <NoteWithData />
+        <NoteWithData />
       </View>
       <View style={{marginTop: 100, height: 20}}></View>
     </View>
