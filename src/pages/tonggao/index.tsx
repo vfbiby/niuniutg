@@ -258,6 +258,7 @@ const Tonggao = () => {
             width: "100%",
             borderRadius: 10,
             background: 'url(IMG_2237.JPG) no-repeat',
+            backgroundPosition: 'center',
             backgroundSize: 'contain'
           }}
           />
@@ -268,7 +269,8 @@ const Tonggao = () => {
                 height: 100,
                 borderRadius: 10,
                 background: 'url(https://img.alicdn.com/imgextra/i1/550020974/O1CN01PyIFs11J48geEg1oW_!!550020974.jpg_.webp) no-repeat',
-                backgroundSize: 'cover'
+                backgroundPosition: 'center',
+                backgroundSize: 'contain'
               }}
               />
               <View style={{textAlign: 'center', color: 'gray'}}>毛衣</View>
@@ -279,7 +281,8 @@ const Tonggao = () => {
                 height: 100,
                 borderRadius: 10,
                 background: 'url(https://img.alicdn.com/bao/uploaded/i4/550020974/O1CN01eJI3Ly1J48ghmXkvS_!!550020974.jpg_q95.jpg_.webp) no-repeat',
-                backgroundSize: 'cover'
+                backgroundPosition: 'center',
+                backgroundSize: 'contain'
               }}
               />
               <View style={{textAlign: 'center', color: 'gray'}}>半身裙</View>
@@ -290,7 +293,8 @@ const Tonggao = () => {
                 height: 100,
                 borderRadius: 10,
                 background: 'url(https://g-search1.alicdn.com/img/bao/uploaded/i4/i1/804394550/O1CN01m2lKaX1jTwwxvd4cH_!!804394550.jpg_580x580q90.jpg) no-repeat',
-                backgroundSize: 'cover'
+                backgroundPosition: 'center',
+                backgroundSize: 'contain'
               }}
               />
               <View style={{textAlign: 'center', color: 'gray'}}>鞋子</View>
